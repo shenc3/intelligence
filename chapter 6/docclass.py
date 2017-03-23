@@ -1,5 +1,5 @@
 # stage1. 
-#    截至目前，是通过训练文档中出现的特征及其对应的类别频率，来对新的特征的分类进行预测
+#    截至目前，仅通过训练文档中出现的特征及其对应的类别频率，来对新的特征的分类进行预测
 #    通过设置初始概率为0.5，增强预测的平衡性
 
 # stage2. 
@@ -158,8 +158,3 @@ class fisherclassifier(classifier):
         p = clf / freqsum
 
         return p
-
-
-
-cl = naivebayes(getwords)
-sampletrain(cl)
